@@ -7,7 +7,7 @@ import {
   updateUser
 } from "../services/user.service.ts";
 const router = new Router({
-  prefix: '/api'
+  prefix: '/api/v1'
 });
 
 router.get("/users", getAllUsers)

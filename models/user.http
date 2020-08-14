@@ -1,15 +1,15 @@
 @contentType = application/json
 @token = ikvwwqea5zikvasdfasdfwwqea5zi2swrTEEd
-@baseurl = http://localhost:8000
+@baseurl = http://localhost:8000/api/v1
 
 
-GET {{baseurl}}/api/users
-
-###
-GET {{baseurl}}/api/user/3
+GET {{baseurl}}/users
 
 ###
-POST {{baseurl}}/api/user
+GET {{baseurl}}/user/3
+
+###
+POST {{baseurl}}/user
 Content-Type: {{contentType}
 Authentication: Bearer {{token}}
 
@@ -19,7 +19,7 @@ Authentication: Bearer {{token}}
 }
 
 ###
-PUT {{baseurl}}/api/user/2
+PUT {{baseurl}}/user/2
 Content-Type: {{contentType}
 Authentication: Bearer {{token}}
 
@@ -29,4 +29,4 @@ Authentication: Bearer {{token}}
 }
 
 ###
-DELETE {{baseurl}}/api/user/3
+DELETE {{baseurl}}/user/3
