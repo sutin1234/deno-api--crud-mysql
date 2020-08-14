@@ -1,0 +1,32 @@
+@contentType = application/json
+@token = ikvwwqea5zikvasdfasdfwwqea5zi2swrTEEd
+@baseurl = http://localhost:8000
+
+
+GET {{baseurl}}/api/users
+
+###
+GET {{baseurl}}/api/user/3
+
+###
+POST {{baseurl}}/api/user
+Content-Type: {{contentType}
+Authentication: Bearer {{token}}
+
+{
+    "name": "sutin deno",
+    "country": "thailand"
+}
+
+###
+PUT {{baseurl}}/api/user/2
+Content-Type: {{contentType}
+Authentication: Bearer {{token}}
+
+{
+    "name": "sutin deno RestAPI",
+    "country": "thailand"
+}
+
+###
+DELETE {{baseurl}}/api/user/3
